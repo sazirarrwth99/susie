@@ -24,8 +24,10 @@ def base():
 
     config.wandb_resume_id = None
 
-    config.vae = "runwayml/stable-diffusion-v1-5:flax"
-    config.text_encoder = "runwayml/stable-diffusion-v1-5:flax"
+    # config.vae = "runwayml/stable-diffusion-v1-5:flax"
+    # config.text_encoder = "runwayml/stable-diffusion-v1-5:flax"
+    config.vae = "lodestones/stable-diffusion-v1-5-flax"
+    config.text_encoder = "lodestones/stable-diffusion-v1-5-flax"
 
     # ema
     config.ema = ema = ConfigDict()
@@ -141,8 +143,10 @@ def debug():
     config.sample_interval = 10
     config.num_val_batches = 4
 
-    config.vae = "runwayml/stable-diffusion-v1-5:flax"
-    config.text_encoder = "runwayml/stable-diffusion-v1-5:flax"
+    # config.vae = "runwayml/stable-diffusion-v1-5:flax"
+    # config.text_encoder = "runwayml/stable-diffusion-v1-5:flax"
+    config.vae = "lodestones/stable-diffusion-v1-5-flax"
+    config.text_encoder = "lodestones/stable-diffusion-v1-5-flax"
 
     config.sample.num_contexts = 4
     config.sample.num_samples_per_context = 4

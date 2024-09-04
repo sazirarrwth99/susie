@@ -178,7 +178,8 @@ def create_sample_fn(
     prompt_w: float = 7.5,
     context_w: float = 2.5,
     eta: float = 0.0,
-    pretrained_path: str = "runwayml/stable-diffusion-v1-5:flax",
+    pretrained_path: str = "lodestones/stable-diffusion-v1-5-flax",
+    # pretrained_path: str = "runwayml/stable-diffusion-v1-5:flax",
 ) -> Callable[[np.ndarray, str], np.ndarray]:
     if (
         os.path.exists(path)
